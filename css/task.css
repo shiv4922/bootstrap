@@ -1,0 +1,67 @@
+body{
+}
+
+
+
+
+@media (min-width: 320px) { 
+	.header2{
+	border-radius: 20px;
+	background-color: yellow;
+	margin: 4px;
+	padding: 10px 8px 0px 8px;
+	width: 100%;
+}
+.data{
+	width: 90%;
+	margin: 2px 2px 2px 0px;
+}
+.icon{
+	
+	border: 1px solid green;
+	background-color: blue;
+	padding: 6px;
+}
+
+.btn{
+	border-radius: 16px;
+	padding: 10px;
+}
+.tips{
+	
+	background-color: lightgreen;
+	padding: 4px;
+	margin: 3px;
+	text-align: justify;
+}
+.t1{
+	border:2px solid red;
+	background-color: red;
+	padding: 4px;
+ }
+}
+
+@media (min-width: 768px) {  }
+
+
+@media (min-width: 992px) { 
+
+.data{
+	width: 90%;
+	margin: 2px 2px 2px 18px;
+	} }
+
+
+@media (min-width: 1200px) { ... }
+
+
+
+
+
+
+
+.header{
+
+	    
+}
+

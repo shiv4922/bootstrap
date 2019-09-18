@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.">
+
+<title>Portfolio</title>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+	.nav-item{
+		
+		text-align: center;
+		margin: 0px 58px; 
+	}
+	.nav-item:hover{
+		color: yellow;
+		background-color: red;
+		font-weight: bold;
+
+	}
+	
+
+		.about{
+		    display: inline-block;
+    float: left;
+    padding: 5px 17px;
+    border: 3px solid lightgoldenrodyellow;
+    margin: 4px 4px;
+    background-color: lightskyblue;
+		
+		}
+		.about a:hover{
+			text-decoration: none;
+			color: yellow;
+		}
+
+		.home{
+			
+			text-align: justify;
+
+
+		}
+			.icon{
+				display: inline-block;
+				position: relative;
+				right: 54px;
+				text-decoration: none;
+			}
+			.icon a:hover{
+				text-decoration: none;
+			}
+
+		.social-icon{display: inline-block;
+    float: left;
+    width: 40px;
+    position: relative;
+        padding: 5px 30px 5px 15px;
+    right: 66px;
+    margin: 0px 8px;
+   
+
+
+		}
+		.social-icon:hover{
+			background-color: black;
+		}
+		.img{
+
+		}
+
+		.flip-card{width: 300px;
+			height: 360px;
+			background-color: transparent;
+			
+		}
+		.flip-card-inner{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			transition: transform 0.6s;
+			transform-style: preserve-3d;
+			
+
+		}
+		.flip-card:hover .flip-card-inner{
+			transform: rotateY(180deg);
+		}
+
+		.flip-card-front, .flip-card-back{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			backface-visibility: hidden;
+		}
+		
+		.flip-card-back{
+			background-color:lightskyblue;
+			color: grey;
+			transform: rotateY(180deg);
+		}
+
+		.do{
+			    width: auto;
+    height: 270px;
+    margin: 15px;
+    padding: 20px;
+		}
+
+		.back{
+
+			    background-image: url(img/back.jpg);
+    backface-visibility: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+		}
+		.percentagem{
+			position: absolute;
+    top: 0;
+    left: 0; width: 86%;
+    height: 7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #0bceaf;
+		}
+
+
+
+</style>
+
+</head>
+<body class="bg-white">
+
+<nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-info" style="visibility: visible;">
+
+	<div class="container-fluid">
+
+
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#n">
+		 			<span class="navbar-toggler-icon"></span>
+		 			
+		 		</button>
+
+		 	<div class="collapse navbar-collapse" id="n">
+		 		
+		 		<ul class="navbar-nav text-center ">
+		 			<li class="nav-item">
+		 				<a href="#" class="nav-link" style="color: white;">Home</a>
+		 			</li>
+		 			<li class="nav-item ">
+		 				<a href="about.html" class="nav-link" style="color: white;" >About</a>
+		 			</li>
+		 			<li class="nav-item ">
+		 				<a href="" class="nav-link" style="color: white;">Skills</a>
+		 			</li>
+		 			<li class="nav-item ">
+		 				<a href="" class="nav-link" style="color: white;">Experience</a>
+		 			</li>  
+		 			<li class="nav-item ">
+		 				<a href="" class="nav-link" style="color: white;">Portfolio</a>
+		 			</li><li class="nav-item ">
+		 				<a href="" class="nav-link" style="color: white;">Blog</a>
+		 			</li>
+		 			<li class="nav-item ">
+		 				<a href="" class="nav-link" style="color: white;">Contact</a>
+		 			</li>
+		 			
+		 			
+		 			
+		 			
+
+		 		</ul>
+		 		
+		 	</div>
+
+	</div>
+	
+	
+</nav><br><br>
+
+<div class="container-fluid bg-suceess back">
+<div class="row">
+	
+	
+
+<div class="col-md-6 ">
+	
+<div class="img">
+	<div class="flip-card">
+		<div class="flip-card-inner">
+			<div class="flip-card-front">
+				<img class="img-fluid img-thumbnail " src="img/raj.jpg">
+
+			</div>
+		<div class="flip-card-back ">
+<br>
+			<h2><span>MAHI RAJ</span></h2>
+			<p>IT Engineer</p>
+			<p>Designer</p>
+			<p>Developer</p>
+			<p class="text-warning">You Must Love me.</p><br>
+			<div>
+	
+     <p style=" font-size: 38px;"> 
+     	<a href=""><i class="fa fa-facebook "></i></a></li> 
+      
+      </p>
+                               
+
+	</div>
+			
+		</div>
+			
+		</div>
+		
+	</div>
+
+
+
+</div>
+
+</div>
+
+
+	<div class="col-md-6 ">
+		<div class="home">
+		<button class="btn-success btn-rounded" style="border-radius: 12px; padding: 7px;">Hello I'm</button><br><br>
+
+		<h1>SHIVRAJ DHAKAD</h1>
+		<h3>Web Developer</h3><br>
+<ul>
+	<li class="icon">
+		<i class="fa fa-envelope"></i>
+		<a href="mailto:"> &nbsp&nbsp reso.raj4922@gmail.com</a><br>
+	</li><br>
+	<li class="icon" >
+	<i class="fa fa-phone"></i>
+	<a href="callto:">  &nbsp&nbsp +91 8269034545</a>
+   	</li>
+<br>
+   	<li class="icon" >
+   		<i class="fa fa-map-marker"></i>
+   		<a href="">  &nbsp&nbsp  109, Anupam nagar,city center, gwalior</a>
+   	</li>
+
+</ul>
+
+<div>
+	<ul >
+     <li class="social-icon"> <a href=""><i class="fa fa-facebook"></i></a></li> 
+      <li class="social-icon">    <a href=""><i class="fa fa-twitter"></i></a></li> 
+      <li class="social-icon"> <a href=""><i class="fa fa-github"></i></a></li> 
+     <li class="social-icon"><a href=""><i class="fa fa-dribbble"></i></a></li> 
+      </ul>                          
+
+	</div>
+</div>
+</div>
+
+
+</div>
+	<br><br><br><br><br>
+</div><br>
+<hr>
+<h1 style="text-align: center;">About Me</h1>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<img class="img-fluid"  src="img/port.png"><br>
+		</div><br>
+
+		<div class="col-md-6" ><br><br><br>
+			
+			<p>Hello, I’m a SHIVRAJ, UI-designer and web-developer. I have rich experience in web site design & building and customization. </p>
+
+<ul style="padding: 0px;">
+				<li class="about"><a href="">HTML</a></li>
+				<li class="about"><a href="">CSS</a></li>
+				<li class="about"><a href="">BOOTSTRAP</a></li>
+				<li class="about"><a href="">ANGULAR</a></li>
+				<li class="about"><a href="">WORDPRESS</a></li>
+				<li class="about"><a href="">PHP</a></li><br>
+			</ul><br><br><br>
+			<center><br>
+				<button class="btn-success " style="padding: 10px;">Download CV</button>
+			</center>
+
+			
+		</div>
+	</div>
+</div>
+<br><br><br>
+
+<hr>
+<center><h1>WHAT I DO</h1></center>
+<hr>
+<div class="container">
+	
+		
+<div class="row">
+		<div class="col-md-4 "  >
+			 
+			<div class="bg-warning do" >
+			<i class="fa fa-bullseye purple-color"></i>
+			<h3>UI Design</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			
+			</div>
+		</div>
+		<div class="col-md-4 ">
+			
+			<div class="bg-info do" >
+				<i class="fa fa-code iron-color"></i>
+				<h3>Web Development</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+				
+			</div>
+		</div><br><br>
+
+		<div class="col-md-4 " >
+			
+			<div class="bg-dark do">
+				<i class="fa fa-object-ungroup sky-color"></i>
+				<h3>Wordpress</h3>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+				
+			</div>
+		</div>
+
+</div>
+	</div><br>
+<hr>
+<center><h1>TECHNICAL</h1></center>
+<hr>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+
+			
+			<h5 >HTML</h5>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100"
+				aria-valuemin="0" aria-value-max="100"
+				style="width: 100%;">
+					<br><br>
+				</div>
+				
+			</div>
+
+			<h5 >CSS</h5>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="100"
+				aria-valuemin="0" aria-value-max="100"
+				style="width: 100%;">
+					<br><br>
+				</div>
+				
+			</div>
+
+			<h5 >BOOTSTRAP</h5>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="96"
+				aria-valuemin="0" aria-value-max="100"
+				style="width: 96%;">
+					<br><br>
+				</div>
+				
+			</div>
+
+			<h5 >JavaScript</h5>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="6" 
+				aria-valuemin="0" aria-value-max="100"
+				style="width: 6%;">
+					<br><br>
+				</div>
+				
+			</div>
+
+			<h5 >WORDPRESS</h5>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="66"
+				aria-valuemin="0" aria-value-max="100"
+				style="width: 66%;">
+					<br><br>
+				</div>
+			</div>
+
+				<h5 >ANGULAR</h5>
+			<div class="progress">
+				<div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="16"
+				aria-valuemin="0" aria-value-max="100"
+				style="width: 16%;">
+					<br><br>
+				</div>
+				
+			</div>
+
+			
+			
+		</div>
+	
+	</div>
+</div>
+<hr>
+
+
+
+
+
+
+
+</body>
+</html>
